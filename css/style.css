@@ -114,17 +114,11 @@ body {
   min-height: 54px;
 }
 
-.menu-categories__item {
-  position: relative;
-}
 .menu-categories__link {
   transition: all 0.3s;
   font-weight: 400;
   padding: 15px 0 14px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
 }
 .menu-categories__link::before {
   content: "";
