@@ -552,9 +552,12 @@ body {
 .slick-slide img {
   display: inline;
 }
+.products {
+  margin-bottom: 80px;
+}
 .product__more {
   text-align: center;
-  margin: 35px 0 80px;
+  margin: 35px 0 0;
 }
 .product__more-link {
   font-size: 15px;
