@@ -406,6 +406,7 @@ body {
   padding: 52px 20px 31px;
   transition: all 0.3s;
   min-height: 400px;
+  width: 100%;
 }
 .product-item__title {
   font-weight: normal;
@@ -729,7 +730,7 @@ button.catalog__filter-btnline {
   margin-bottom: 30px;
 }
 .product-item__img {
-  max-width: 100%;
+  max-width: 94%;
 }
 .pagination {
   width: 100%;
