@@ -52,6 +52,7 @@ body {
   min-width: 122px;
   font-family: "SFProDisplay-Bold", sans-serif;
   font-weight: 700;
+  padding: 20px 0;
 }
 
 .header__box {
@@ -398,6 +399,10 @@ body {
 .product-item__wrapper {
   position: relative;
   width: 271px;
+  transition: all 0.3s;
+}
+.product-item__wrapper.product-item__wrapper--list {
+  width: 100%;
 }
 .product-item {
   border: 1px solid #cdcdcd;
@@ -411,6 +416,8 @@ body {
 .product-item__title {
   font-weight: normal;
   padding: 14px 0 25px;
+  font-size: 18px;
+  line-height: 21px;
 }
 .product-item__favorite {
   position: absolute;
@@ -700,6 +707,10 @@ body {
 .catalog__filter-items button + button {
   margin-left: 8px;
 }
+.catalog__filter-btn {
+  display: flex;
+  align-items: center;
+}
 .catalog__filter-btn button {
   background-color: transparent;
   border: none;
@@ -709,6 +720,29 @@ body {
 }
 .catalog__filter-btn button + button {
   margin-left: 10px;
+}
+button.catalog__filter-btngrid {
+  width: 26px;
+  height: 21px;
+  outline: none;
+}
+button.catalog__filter-btnline {
+  width: 25px;
+  height: 19px;
+  outline: none;
+}
+.catalog__filter-button {
+  opacity: 0.3;
+}
+.catalog__filter-button--active {
+  opacity: 1;
+}
+.select-item {
+  border: 1px solid #d7d9df;
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 34px;
+  padding: 7px 10px 7px 20px;
 }
 .catalog__inner {
   display: flex;
@@ -804,10 +838,11 @@ body {
 .aside-filter__content {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .aside-filter__content-box {
   width: 50%;
+  margin-bottom: 10px;
 }
 .aside-filter__content-label {
   cursor: pointer;
@@ -991,4 +1026,127 @@ body {
 .jq-selectbox__dropdown {
   border-radius: 0;
   padding-top: 15px;
+}
+.filter-more {
+  width: 100%;
+}
+.filter-more__btn {
+  font-size: 14px;
+  line-height: 17px;
+  color: #1c62cd;
+  border: none;
+  border-bottom: 1px solid #1c62cd;
+  background-color: transparent;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+.filter-search {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  height: 30px;
+  outline: none;
+  padding: 0 20px;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.filter-search::placeholder {
+  color: #bdbec2;
+}
+.btn-checked .aside-filter__content {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.btn-checked .aside-filter__content-box {
+  width: auto;
+}
+.btn-checked .aside-filter__content-label {
+  position: relative;
+  height: 25px;
+  width: 63px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.07em;
+  color: #c4c4c4;
+}
+.btn-checked .jq-checkbox {
+  height: 25px;
+  width: 63px;
+  background: #f0f0f4;
+  border: none;
+}
+.btn-checked .jq-checkbox.checked {
+  background: #1c62cd;
+  color: #fff;
+}
+.btn-checked .jq-checkbox.checked ~ .btn-checked__text {
+  color: #fff;
+}
+.btn-checked .jq-checkbox.checked .jq-checkbox__div {
+  display: none;
+}
+.btn-checked__text {
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-57%);
+  z-index: 5;
+}
+.filter-btn__send {
+  background: #f0f0f4;
+  padding: 16px 85px;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.12em;
+  outline: none;
+  border: none;
+  color: #bdbec2;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.filter-btn__send--active {
+  background-color: #1c62cd;
+  color: #fff;
+}
+.aside-filter__item-btn {
+  text-align: center;
+}
+.filter__extra {
+  font-size: 13px;
+  line-height: 16px;
+  position: relative;
+  padding-right: 29px;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.filter__extra::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  background-image: url("../images/arr-down.svg");
+  width: 12px;
+  height: 8px;
+  top: 4px;
+}
+.filter__extra-content {
+  display: none;
+}
+.filter__extra.filter__item-drop--active::after {
+  transform: rotate(180deg);
+}
+.filter-btn__reset {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  line-height: 16px;
+  color: #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  cursor: pointer;
 }
