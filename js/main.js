@@ -58,4 +58,11 @@ $(function () {
     $('.catalog__filter-btngrid').removeClass('catalog__filter-button--active');
     $('.product-item__wrapper').addClass('product-item__wrapper--list');
   });
+
+  //Rate
+  $(".rate-yo").rateYo({
+    ratedFill: "#1c62cd",
+    spacing: '7px',
+    normalFill: "#C4C4C4"
+  });
 });
