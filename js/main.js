@@ -36,6 +36,36 @@ $(function () {
     slidesToScroll: 1,
     prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="images/arrow-black-left.svg" alt="arr"></button>',
     nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="images/arrow-black-right.svg" alt="arr"></button>',
+    responsive: [
+      {
+        breakpoint: 1301,
+        settings: {
+          arrows: false,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 3,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 870,
+        settings: {
+          slidesToShow: 2,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 590,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+        }
+      }
+    ],
   });
 
   //Form
