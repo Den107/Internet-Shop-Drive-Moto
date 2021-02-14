@@ -114,4 +114,9 @@ $(function () {
     $(this).next().slideToggle();
     $(this).toggleClass('footer__topdrop--active');
   });
+
+  //Filter-drop
+  $('.aside__btn').on('click', function () {
+    $(this).next().slideToggle();
+  });
 });
