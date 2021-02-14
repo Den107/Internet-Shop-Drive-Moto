@@ -108,4 +108,10 @@ $(function () {
   $('.menu__btn').on('click', function () {
     $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
   });
+
+  //Footer-drop
+  $('.footer__topdrop').on('click', function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass('footer__topdrop--active');
+  });
 });
